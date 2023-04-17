@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from argparse import ArgumentParser
 
-from mmdet3d.apis import inference_segmentor, init_model#show_result_meshlab
+from mmdet3d.apis import inference_segmentor, init_model, show_result_meshlab
 
 
 def main():
@@ -28,14 +28,14 @@ def main():
     # test a single image
     result, data = inference_segmentor(model, args.pcd)
     # show the results
-    # show_result_meshlab(
-    #     data,
-    #     result,
-    #     args.out_dir,
-    #     show=args.show,
-    #     snapshot=args.snapshot,
-    #     task='seg',
-    #     palette=model.PALETTE)
+    show_result_meshlab(
+        data,
+        result,
+        args.out_dir,
+        show=args.show,
+        snapshot=args.snapshot,
+        task='seg',
+        palette=model.PALETTE)
 
 
 if __name__ == '__main__':
