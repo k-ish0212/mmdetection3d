@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from argparse import ArgumentParser
 
-from mmdet3d.apis import inference_segmentor, init_model, #show_result_meshlab
+from mmdet3d.apis import inference_segmentor, init_model#show_result_meshlab
 
 
 def main():
