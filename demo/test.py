@@ -1,4 +1,4 @@
-filenames = [f.name for f in os.scandir("../")]print("hello world")
+print("hello world")
 
 import os
 
